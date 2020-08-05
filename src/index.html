@@ -1,0 +1,52 @@
+---
+title: Atomico - started
+description: |
+  Welcome to Atomico just 3Kb to create amazing webcomponents 
+  based on virtual-dom, Hoosk and magic props
+tips:
+  - "> npm run create:component <span># Create a component skeleton</span>"
+  - "> npm run create:hooks <span># Create a skeleton hook</span>"
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="{{page.description}}" />
+    <title>{{page.title}}</title>
+    <link rel="stylesheet" href="{{'./style.css'|asset}}" />
+    <script async type="module" src="{{'./index.js'|asset}}"></script>
+  </head>
+  <body>
+    <main class="o-welcome">
+      <div class="o-welcome_message">
+
+        <div class="c-tag">
+          <div class="c-tag_icons">
+            <data-icon type="arrow"></data-icon><br>
+            <data-icon opacity=".5" type="arrow"></data-icon><br>
+            <data-icon opacity=".25" type="arrow"></data-icon><br>
+          </div>
+          <div class="c-tag_data">
+            <strong>IPM</strong><br>
+            <span>Mayo 2020</span><br>
+            <strong>25.6%</strong><br>
+          </div>
+        </div>
+        <data-circle-progress   progress="0" size="150px" br-size="4px" br-color-cero="blue">
+          <center>
+            <strong>IPM</strong><br>
+            <span>Mayo 2020</span><br>
+            <strong>25.6%</strong><br>
+            <data-slot-progress cases="+ 0>, - 0<, = 0=" progress="0">
+              <data-icon slot="+" type="arrow"></data-icon>
+              <data-icon transform="rotate(180deg)" slot="-" type="arrow" color="tomato"></data-icon>
+              <data-icon slot="=" type="equal" color="#1FB0E6"></data-icon>
+            </data-slot-progress>
+          </center>
+        </data-circle-progress>
+        <input type="range" id="points" name="points" min="-1" max="1" step="0.1" oninput="document.querySelectorAll('[progress]').forEach((el)=>el.progress = event.target.value)">
+      </div>
+    </main>
+  </body>
+</html>

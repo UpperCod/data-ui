@@ -1,0 +1,24 @@
+:host {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  height: auto;
+}
+svg {
+  display: block;
+}
+g,
+circle {
+  transition: 1s ease all;
+}
+
+.centered {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
