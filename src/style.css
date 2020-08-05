@@ -26,6 +26,8 @@ body {
   box-sizing: border-box;
   &_message {
     position: relative;
+    display: flex;
+    align-items: center;
   }
   &_code {
     background: black;
