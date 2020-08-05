@@ -22,7 +22,7 @@ const DataIconArrow: Component<Props> = ({
       }}`}</style>
       {type == "arrow" && (
         <svg height={size} viewBox="0 0 13 9">
-          <g transform={transform}>
+          <g>
             <path
               d="M5.689,1.122a1,1,0,0,1,1.621,0l4.544,6.292A1,1,0,0,1,11.044,9H1.956a1,1,0,0,1-.811-1.585Z"
               fill={color}
@@ -32,7 +32,7 @@ const DataIconArrow: Component<Props> = ({
       )}
       {type == "equal" && (
         <svg width="11.001" height={size} viewBox="0 0 11.001 8">
-          <g transform={transform}>
+          <g>
             <path
               d="M-2073.6-1809a1.5,1.5,0,0,1-1.5-1.5,1.5,1.5,0,0,1,1.5-1.5h8a1.5,1.5,0,0,1,1.5,1.5,1.5,1.5,0,0,1-1.5,1.5Zm0-5a1.5,1.5,0,0,1-1.5-1.5,1.5,1.5,0,0,1,1.5-1.5h8a1.5,1.5,0,0,1,1.5,1.5,1.5,1.5,0,0,1-1.5,1.5Z"
               transform="translate(2075.1 1817)"
