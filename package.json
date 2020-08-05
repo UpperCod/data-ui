@@ -25,6 +25,6 @@
     "tfolder-cli": "^0.2.0"
   },
   "exports": {
-    ".": "/dest"
+    ".": "./dest"
   }
 }
